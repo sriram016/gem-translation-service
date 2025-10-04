@@ -208,7 +208,7 @@ input,textarea{
 .owl-next{
     position: absolute;
     top: 50%;
-    right:4% !important;
+    right:4% ;
     background: var(--primary-color) !important;
     width: 40px;
     height: 40px;
@@ -217,7 +217,7 @@ input,textarea{
 .owl-prev{
     position: absolute;
     top: 50%;
-    left:2% !important;
+    left:2% ;
     background: var(--primary-color) !important;
     width: 40px;
     height: 40px;
@@ -242,6 +242,14 @@ input,textarea{
     }
     .logo{
         width: 130px !important;
+    }
+    .owl-prev{
+        top: 80%;
+        left: 30%;
+    }
+    .owl-next{
+        top: 80%;
+        left: 50%;
     }
 }
 .copy-right p{
