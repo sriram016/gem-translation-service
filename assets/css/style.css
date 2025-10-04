@@ -251,6 +251,9 @@ input,textarea{
         top: 80%;
         left: 50%;
     }
+    .pt-mb{
+        padding-top: 20px !important;
+    }
 }
 .copy-right p{
     font-weight: 700;
