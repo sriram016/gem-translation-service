@@ -279,6 +279,9 @@ input,textarea{
     .flag-main{
       gap: 10px;
     }
+    .banner-content p{
+        font-size: 16px;
+    }
 }
 .copy-right p{
     font-weight: 700;
