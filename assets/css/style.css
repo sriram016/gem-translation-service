@@ -158,6 +158,9 @@ input,textarea{
     z-index: -1;
     opacity: 0.6;
 }
+.banner-content{
+    padding-left: 50px;
+}
 .banner-content h1{
     font-size: 60px;
     color: var(--white);
@@ -171,6 +174,7 @@ input,textarea{
 .banner-content p{
     color: var(--white);
     padding-bottom: 20px;
+    font-size: 20px;
 }
 .banner-content button{
     background: var(--primary-color);
@@ -236,10 +240,10 @@ input,textarea{
     .banner-content h1{
         font-size: 40px;
     }
-    .banner-btn button{
+    /* .banner-btn button{
         padding: 10px 20px !important;
         font-size: 10px;
-    }
+    } */
     .logo{
         width: 130px !important;
     }
@@ -256,7 +260,58 @@ input,textarea{
     .pt-mb{
         padding-top: 20px !important;
     }
+    .banner-content{
+        padding-left: 0;
+    }
+    .banner-btn button{
+        margin-left: 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: start;
+        padding: 17px 10px;
+    }
+    .navbar-nav .nav-item{
+        background: var(--primary-color) !important;
+        padding: 10px;
+        border: 1px solid #fff !important;
+        color: var(--white);
+    }
+    .flag-main{
+      gap: 10px;
+    }
 }
 .copy-right p{
     font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .banner-main-bg{
+    height: 800px;
+  }
+  .navbar-nav .nav-item{
+        background: var(--primary-color) !important;
+        padding: 10px;
+        border: 1px solid #fff !important;
+        color: var(--white);
+    }
+    .flag-main{
+      gap: 10px;
+    }
+   .banner-btn button{
+        margin-left: 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: start;
+        padding: 17px 10px;
+    }
+}
+.toggle-icon i{
+    color: #000 !important;
+}
+.flag-main{
+    display: flex;
+    align-items: center;
+}
+.flag-img img{
+    width: 30px;
 }
