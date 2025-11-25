@@ -14,7 +14,7 @@
     --box-shadow:0 0 10px rgba(0, 0, 0, 0.15);
 }
 html{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
@@ -147,6 +147,7 @@ input,textarea{
     z-index: 23;
     height: 100vh;
 }
+
 .overlay::before{
     content: '';
     background: #000;
@@ -192,10 +193,18 @@ input,textarea{
     border: 1px solid var(--primary-color);
 }
 .banner-two-bg{
-    background: url(../img/bg/banner.jpeg);
+    background: url(../img/bg/CTS-desktop.jpg);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
+}
+@media (max-width:768px) {
+    .banner-two-bg{
+    background: url(../img/bg/CTS-mobile.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position: center;
+}
 }
 .banner-four-bg{
     background: url(../img/bg/banner-four.jpeg);
@@ -204,7 +213,7 @@ input,textarea{
     background-position: top center;
 }
 .banner-three-bg{
-    background: url(../img/bg/banner-2.jpeg);
+    background: url(../img/bg/banner2.png);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
@@ -620,6 +629,9 @@ ease;
 .who-we-box-main:hover .who-we-text-main h3{
     color: var(--white);
 }
+.who-we-box-main:hover .who-we-text-main h6{
+    color: var(--white);
+}
 .who-we-box-main:hover .who-we-box-text p{
     color: var(--white);
 }
@@ -937,6 +949,9 @@ ease;
     font-size: 13px;
 }
 /*  */
+.client-bg{
+    position: relative;
+}
 .client-hed h3{
     font-size: 40px;
     text-align: center;
@@ -947,6 +962,41 @@ ease;
     background-color: var(--white);
     padding: 40px 30px;
     border-radius: 5px;
+    perspective: 1000px;
+}
+.card-flip{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.client-bg-sec:hover .card-flip {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back{
+    /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 .client-logo-img img{
     width: 180px;
@@ -970,4 +1020,78 @@ ease;
     .client-logo-img{
         text-align: center;
     }
+}
+
+/* logo slider */
+.slide-text2 {
+    position: relative;
+    display: block;
+}
+.slide-text2 .text-inner1 {
+    position: relative;
+    display: flex;
+    padding: 5px 0px;
+    transform: rotate(0deg);
+}
+.slide-text2 .text-inner1:before {
+    position: absolute;
+    content: '';
+    left: -60px;
+    top: 0px;
+    width: calc(100% + 100px);
+    height: 100%;
+}
+.slide-text2 .text-inner1 .text-list1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll-left1 80s  linear infinite;
+}
+.slide-text2 .text-inner1  .reverse{
+    animation-direction: reverse;
+}
+@keyframes scroll-left1 {
+    0% {
+    -webkit-transform: translateX(0%);
+}
+100% {
+    -webkit-transform: translateX(-100%);
+}
+}
+.slide-text2 .text-inner1 .text-list1 li{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    /* line-height: 40px; */
+    color: var(--white);
+    margin-right: 80px;
+    font-weight: 700;
+}
+.slide-img-logo {
+    width: 150px;
+    max-width: none;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
+  
+ .banner-main-bg{
+    height: 630px;
+ }
+ .client-logo-img img{
+    width: 140px !important;
+ }
+ .core-value-img img{
+    object-fit: cover;
+ }
+ .testi-review-section{
+    height: 632px ;
+ }
+  
 }
