@@ -206,6 +206,7 @@ input,textarea{
     background-position: center;
 }
 }
+
 .banner-four-bg{
     background: url(../img/bg/banner-four.jpeg);
     background-repeat: no-repeat !important;
@@ -1081,9 +1082,15 @@ ease;
 
 @media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
   
- .banner-main-bg{
+ /* .banner-main-bg{
     height: 630px;
- }
+ } */
+  .banner-content h1{
+    font-size: 40px;
+  }
+  .banner-two-bg{
+    background-position: right;
+  }
  .client-logo-img img{
     width: 140px !important;
  }
@@ -1091,7 +1098,7 @@ ease;
     object-fit: cover;
  }
  .testi-review-section{
-    height: 632px ;
+    height: 400px ;
  }
   
 }

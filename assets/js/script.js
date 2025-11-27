@@ -55,6 +55,11 @@ $(".testi1").owlCarousel({
             dots:false
         },
         900:{
+            items:1,
+            nav: false,
+            dots:false
+        }
+        ,1000:{
             items:3,
             nav: false,
             dots:false
