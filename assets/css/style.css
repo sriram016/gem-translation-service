@@ -193,18 +193,18 @@ input,textarea{
     border: 1px solid var(--primary-color);
 }
 .banner-two-bg{
-    background: url(../img/bg/CTS-desktop.jpg);
+    background: url(../img/bg/PCTS-desktop.webp);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
 }
 @media (max-width:768px) {
     .banner-two-bg{
-    background: url(../img/bg/CTS-mobile.jpg);
+    background: url(../img/bg/PCTS-mobile.webp);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
-}
+   }
 }
 
 .banner-four-bg{
@@ -214,7 +214,7 @@ input,textarea{
     background-position: top center;
 }
 .banner-three-bg{
-    background: url(../img/bg/banner2.png);
+    background: url(../img/bg/RTRR-desktop.webp);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
@@ -242,7 +242,32 @@ input,textarea{
     padding: 10px 0 0 0;
     margin: 0 !important;
 }
+@media (min-width: 950px) and (max-width: 2000px) and (orientation: landscape) {
+   .banner-main-bg{
+    background-position:top center !important;
+    /* background-size: contain; */
+   }
+   .banner-two-bg{
+     background-position:top center !important;
+    /* background-size: contain; */
+   }
+   .banner-four-bg{
+     background-position:top center !important;
+    /* background-size: contain; */
+   }
+   .banner-three-bg{
+     background-position:top center !important;
+    /* background-size: contain; */
+   }
+  
+}
 @media (max-width:768px) {
+    .banner-three-bg{
+        background: url(../img/bg/RTRR-mobile.webp);
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        background-position: center;
+    }
     .banner-content button{
         width: 100%;
         margin-bottom: 30px;
