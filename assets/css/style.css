@@ -470,10 +470,16 @@ input,textarea{
  .contact-bg{
     position: relative;
     z-index: 23;
-    background: url(../img/bg/contact-bg.jpeg);
+    background: url(../img/bg/contact-bg.webp);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:bottom center;
     background-size: cover;
+    height: 400px;
+ }
+ @media (max-width:768px){
+    .contact-bg{
+        height: auto;
+    }
  }
  .contact-us-hed h1{
     font-size: 60px;
@@ -640,6 +646,7 @@ ease;
     font-size: 40px;
     padding-bottom: 10px;
 }
+
 .who-we-box-main{
     background: var(--white);
     padding: 30px 30px;
@@ -944,8 +951,8 @@ ease;
 .fact-title {
     font-size: 18px;
     letter-spacing: 1px;
-    opacity: 0.7;
-    font-weight: 600;
+    /* opacity: 0.7; */
+    font-weight: 700;
     margin-bottom: 5px !important;
 }
 
